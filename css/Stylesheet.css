@@ -1,0 +1,824 @@
+body{
+    background: url(Background2.jpg) fixed;
+    background-repeat: no-repeat;
+    font-family: Calibri;
+    width: 80%;
+    /* border:2px dashed red; */
+    margin:auto;
+}
+.content_layer{ /* to hlep in parallax effect, to have a different speed of the page content from the background */
+  /* border:2px dashed red; */
+  position: absolute;
+}
+#prlx_layer_1{
+  /* border:2px dashed yellow; */
+  position: fixed;
+  background: url(hover-Background1.png) no-repeat 0px 0px;
+  /* opacity: 0.5; */
+  width: 80%;
+  height: 1000px;
+}
+#tabs .ui-tabs-active { /* To show whick tab is used at the momenet */
+  background: #383e47;
+}
+.banner{
+    width: 100%;
+    height: 100px;
+    /* border:2px dashed green; */
+}
+.banner_left{
+    width:65%;
+    font-family: Algerian;
+    color: black;
+    float: left;
+    /* border:1px dashed red; */
+}
+.banner_right{
+    padding-top:4%;
+    width:32%;
+    /* border:1px dashed red; */
+    float: right;
+}
+/* styling the submit button in the banner */
+.banner_right input[type = submit]{
+    border-radius: 20px;
+    width:20%;
+    opacity: .9;
+    background-image: url("Background2.png");
+    color: navajowhite;
+}
+.banner_right input[type = submit]:hover{
+    /* border: 2px solid black; */
+    box-shadow: 0 0 6px gold;
+    /* background-color: #fff; */
+    color: white;
+    outline: none;
+    cursor: pointer;
+}
+/* styling the droplist in the banner */
+.search_droplist{
+    background-color: black;
+    border-radius: 5px;
+    opacity: .8;
+    color: navajowhite;
+}
+.search_droplist:focus{
+    border: 2px solid black;
+    background-color: #fff;
+    color: black;
+    opacity: 0.5;
+    outline: none;
+}
+/* styling the navigation_bar in the banner */
+.navigation_bar{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 70px;
+    /* border:2px dashed red; */
+    width: 1000px;
+    padding-left: 0px;
+}
+.navigation_bar ul{
+    list-style: none; /*no bullet */
+    color: white;
+
+}
+.navigation_bar ul li{
+    margin-right:0px;
+    padding:0px;
+    height:30px;
+    width:165px;
+    float: left;
+    background-image: url("Background2.png");
+    /* background-image: url("nav_wallpapare.jpg"); */
+    background-repeat: no-repeat;
+    line-height:30px;
+    text-align: center;
+    font-size: 14px;
+    /* border: 1px solid white; */
+    /* border-bottom: 2px solid black;
+    border-left: 1px solid black;  */
+}
+/* styling the fist li in the navigation_bar to have different radius in the banner */
+.navigation_bar ul  #first{
+  border-top-left-radius: 10px;
+}
+/* styling the last li in the navigation_bar to have different radius in the banner */
+.navigation_bar ul  #last{
+  border-top-right-radius: 10px;
+}
+/* styling the 'li' in the navigation_bar which have long words */
+.navigation_bar ul  #big{
+  width: 170px;
+}
+.navigation_bar ul li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+.navigation_bar ul li a:hover{
+    cursor: pointer;
+    color: gold;
+    /* border-radius:10px; */
+    box-shadow: 0 0 6px gold;
+    border-left: 1px solid gold;
+    border-right: 1px solid gold;
+}
+/* -------------------------------------------------Home page-------------------------------------- */
+/* The layout of the home page */
+#HomePage{
+    height:870px;
+    width: 1000px;
+    /* border: 2px dashed greenyellow; */
+}
+
+/* Styling and layouting the footer part */
+footer{
+    padding:0;
+    height: 150px;
+    /*border: 2px dashed red;*/
+    text-align: center;
+    font-weight: bold;
+}
+
+/* The layout of the home page in the bottom have 3 sections
+      - bottom_left, bottom_center, bottom_right */
+ .main_bottom{
+    margin-top: 220px;
+    height:300px;
+    /*border: 2px dashed gold;*/
+}
+/* The left bottom section */
+.bottom_left{
+    /*border: 2px dashed yellow;*/
+    height: 300px;
+    width:27%;
+    float: left;
+    border: 1px solid white;
+    border-radius:10px;
+    border-bottom: 2px solid black;
+    border-left: 1px solid black;
+    background-image: url("Background2.png");
+
+}
+/* Hover effect on left bottom in homepage */
+.bottom_left:hover{
+   box-shadow: 0 0 6px blue;
+}
+/* Target  'ul' in the left bottom in HomePage*/
+.bottom_left ul{
+    /*border: 2px dashed blue;*/
+    list-style: none;
+    font-size: 11px;
+    font-family:'Muli', sans-serif;
+    padding-left:10px;
+    color: white;
+}
+/* Target both 'img' in the left bottom in HomePage*/
+.bottom_left img{
+    float: left;
+    height:  70px;
+    width: 70px;
+    position: inherit;
+    padding:0;
+    padding-right:10px;
+    margin:0;
+}
+
+/* Target all 'p' in the bottom in HomePage*/
+.bottom_left p{
+    margin-left: 20px;
+    color: white;
+}
+
+/* Target all 'h4' in the bottom in HomePage*/
+.main_bottom h4{
+    padding:0;
+    margin:0;
+    color: white;
+}
+
+/* The content of the bottom middle in the HomePage */
+.bottom_center{
+    /*border: 2px dashed yellow;*/
+    height: 300px;
+    width:27%;
+    float: left;
+    margin-left:9%;
+    border: 1px solid white;
+    border-radius:10px;
+    border-bottom: 2px solid black;
+    border-left: 1px solid black;
+    background-image: url("Background2.png");
+}
+/* hover effect on the center section */
+.bottom_center:hover{
+    box-shadow: 0 0 6px blue;
+}
+.bottom_center ul{
+    /*border: 2px dashed blue;*/
+    list-style: none;
+    font-size: 11px;
+    font-family:'Muli', sans-serif;
+    padding-left:10px;
+    color: white;
+}
+/* style 'img' in the center section */
+.bottom_center img{
+    float: left;
+    height:  70px;
+    width: 70px;
+    position: inherit;
+    padding-right:10px;
+    margin:0;
+}
+/* Target all 'p' tag in the bottom center */
+.bottom_center p{
+    margin-left: 20px;
+    color: white;
+}
+/* The right bottom section */
+.bottom_right{
+    height: 300px;
+    width:27%;
+    float: right;
+    border: 1px solid white;
+    border-radius:10px;
+    border-bottom: 2px solid black;
+    border-left: 1px solid black;
+    background-image: url("background2.png");
+ }
+.bottom_right:hover{
+    box-shadow: 0 0 6px blue;
+}
+.bottom_right ul{
+    /*border: 2px dashed blue;*/
+    list-style: none;
+    color: white;
+    font-size: 11px;
+    font-family:'Muli', sans-serif;
+    padding-left:10px;
+}
+/* style 'img' in the right section */
+.bottom_right img{
+    float: left;
+    height:  70px;
+    width: 70px;
+    position: inherit;
+    padding-right:10px;
+    margin:0;
+    /*border:2px dashed red;*/
+}
+/* style 'p' in the right section */
+.bottom_right p{
+    margin-left: 20px;
+    color: white;
+}
+/* Targeting all 'a' (links) in the bottom section in home page */
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+
+}
+a:hover{
+    color: white;
+    text-decoration: underline;
+}
+a:visited{
+    color: white;
+}
+/* Styling the footer in the HomePage */
+footer{
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-image: url("background2.png");
+    color: white;
+}
+footer:hover{
+    box-shadow: 0  0  6px blue;
+}
+/* -------------------------------------------------Contact us page-------------------------------------- */
+/* The layout of the page */
+#ContactUsPage{
+    height:870px;
+    width: 1000px;
+    /* border: 2px dashed greenyellow; */
+}
+/* The layout of the form */
+#ContactUsPage form{
+    box-shadow: 0 0 6px white;
+    border: 1px solid white;
+    border-radius:10px;
+    border-bottom: 2px solid black;
+    border-left: 1px solid black;
+    background-image: url("hover_background .png");
+    width: 40%;
+    padding-bottom: 20px;
+    margin-left: 30px;
+    text-align: center;
+    float: left;
+    position: absolute;
+}
+
+/* style the datepicker */
+.ui-datepicker {
+   background: #333;
+   border: 1px solid #555;
+   color: #EEE;
+   width: 400px;
+ }
+
+/* styling 'submit' button in the form */
+#ContactUsPage input[type=submit] {
+    width: 40%;
+    border: 1px solid #ccc;
+    background-image: url("nav_wallpapare.jpg");
+    color: white;
+    padding: 14px 20px;
+    margin-top:  40px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Targeting the 'checkbox' tag */
+#ContactUsPage input[type=checkbox]{
+    cursor: pointer;
+}
+/* hover effect  */
+#ContactUsPage input[type=submit]:hover {
+    background-color: #2f3133;
+    box-shadow: 0 0 6px white;
+}
+/* The contact details of the Hospital in the right side of the form  */
+#ContactUsPage .contact_details{
+    float: right;
+    width: 36%;
+    margin-top: 0px;
+    padding-bottom:20px;
+    text-align: center;
+    font-size: 17px;
+    color: black;
+    box-shadow: 0 0 6px white;
+    border: 1px solid white;
+    border-radius:10px;
+    border-bottom: 2px solid black;
+    border-left: 1px solid black;
+    background-image: url("hover_background .png");
+}
+/* taget all 'a' links in the contact_details side 'right side' */
+#ContactUsPage a{
+    color: black;
+    font-weight: normal;
+
+}
+#ContactUsPage a:hover {
+    color: #e1ea07;
+    opacity: 1;
+}
+/*  create and style social_media icons */
+#ContactUsPage .fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    color: black;
+}
+/*  social_media icons */
+#ContactUsPage .fa:hover {
+  color: #e1ea07;
+    opacity: 1;
+}
+#ContactUsPage #social_media{
+    text-align: center;
+}
+/* -------------------------------------------------Patient And Visitors Page-------------------------------------- */
+
+/* The layout of the page */
+#PatientAndVisitorsPage{
+    height:870px;
+    width: 1000px;
+    /* border: 2px dashed greenyellow; */
+}
+
+/* The page is divided into two parts  1- navigation_buttons  2- the content of each button */
+#PatientAndVisitorsPage .LinkSide{
+  width: 220px;
+  float: left;
+  /* border: 1px solid red; */
+  padding:0px;
+  margin:0px;
+}
+
+/* forming the navigation_bar in the link side */
+#PatientAndVisitorsPage .LinkSide ul li{
+  list-style: none; /*no bullet */
+  background-color: white;
+  /* background-image: url("hover_background .png"); */
+  background-repeat: no-repeat;
+  line-height:30px;
+  text-align: center;
+  font-size: 15px;
+  border: 1px solid white;
+  border-radius:10px;
+  border-bottom: 2px solid black;
+  border-left: 1px solid black;
+  margin-top: 10px;
+}
+
+/* The color for links in the linkside of the page */
+#PatientAndVisitorsPage .LinkSide ul li a{
+  color: black;
+}
+
+/* changing the color when hover */
+#PatientAndVisitorsPage .LinkSide ul li a:hover{
+  color: blue;
+}
+#PatientAndVisitorsPage .LinkSide ul li:hover{
+  cursor: pointer;
+  border-radius:10px;
+  box-shadow: 0 0 6px blue;
+}
+
+/*import fonts from my desktop*/
+@font-face {
+    font-family: myfirstfont;                   /*the variable name to store the fonts*/
+    src: url(OpenSans-Regular.ttf); /*extract fonts from my desktop*/
+}
+
+/* the second section 'ContentSide' */
+#PatientAndVisitorsPage .ContentSide{
+  width: 760px;
+  float: right;
+  box-shadow: 0 0 6px white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  /* border: 1px solid red; */
+  padding-left: 10px;
+  /* background-color: #0e1f3a; */
+  background-image: url("Content.png");
+  font-size: 14px;
+  border-radius: 12px;
+  font-family: myfirstfont;
+}
+
+/* all headings in the ContentSide section */
+#PatientAndVisitorsPage .ContentSide h3{
+  color: black;
+}
+#PatientAndVisitorsPage .ContentSide #FacilitiesAndServices  ul li{
+  line-height: 200%;
+}
+#PatientAndVisitorsPage .ContentSide #FacilitiesAndServices p{
+  padding-left: 10px;
+}
+
+/* align the 'time' of FacilitiesAndServices */
+#PatientAndVisitorsPage .ContentSide  #Time{
+  text-align: center;
+}
+
+/* target the table and make border for it  */
+#PatientAndVisitorsPage .ContentSide   table td,th{
+  border: 1px solid white;
+  width: 380px;
+  height: 20px;
+  text-align: left;
+}
+
+/* table spacing between cells */
+#PatientAndVisitorsPage .ContentSide table{
+  padding-left: 120px;
+}
+#PatientAndVisitorsPage .ContentSide  #image{
+  padding-left: 120px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+/* to make 'col2' bigger than the others */
+#PatientAndVisitorsPage .ContentSide  table #col2{
+  width: 100px;
+}
+
+/* layout Room Difference has two parts 'left', 'right' */
+#PatientAndVisitorsPage .ContentSide .RoomDifference{
+  padding-left: 120px;
+  width: 560px;
+  /* border: 1px solid red; */
+}
+
+/* Room Difference left part */
+#PatientAndVisitorsPage .ContentSide  .RoomDifference_left{
+  width: 250px;
+  float: left;
+  /* border: 1px solid red; */
+}
+
+/* Room Difference right part */
+#PatientAndVisitorsPage .ContentSide .RoomDifference_right{
+  width: 250px;
+  float: right;
+  /* border: 1px solid red; */
+}
+#PatientAndVisitorsPage .ContentSide #AdmissionAndDischarge table th{
+  border: 2px solid black;
+  text-align: center;
+  background-color: #061d42;
+}
+#PatientAndVisitorsPage .ContentSide #AdmissionAndDischarge table{
+  padding: 40px;
+}
+
+/* star checked */
+#PatientAndVisitorsPage .ContentSide #OvernightStay .checked {
+    color: orange;
+}
+#PatientAndVisitorsPage .ContentSide #OvernightStay h3{
+  padding-right: 0px;
+}
+#PatientAndVisitorsPage .ContentSide #OvernightStay>p,span{
+    padding-left: 20px;
+}
+/* -------------------------------------------------E-brochuresPage-------------------------------------- */
+
+/* The layout of the page */
+/* This page has three sections left, center, right */
+#E_brochuresPage .E_brochure_body{
+    /*border:1px solid red;*/
+    height:1000px;
+    width: 98%;
+    /* background-image: url("Background2.png"); */
+    background-image: url("Content.png");
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Targeting all 'headings' in the page */
+#E_brochuresPage #heading{
+  color: black;
+  font-size: 18px;
+  font-family: myfirstfont;
+  font-weight: bold;
+  background-image: url("Content.png");
+  border:2px solid black;
+  box-shadow: 0  0 6px  white;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+}
+
+/* The left section */
+#E_brochuresPage .E_brochure_left{
+    /* border:1px solid yellow; */
+    float: left;
+    width:26%;
+}
+
+/* targeting all 'img' in the page */
+#E_brochuresPage .E_brochure_img{
+    border:2px solid black;
+    box-shadow: 0 0 6px white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 7%;
+    background-image: url("Content.png");
+}
+
+/* hover for the 'img' */
+#E_brochuresPage .E_brochure_img:hover {
+    box-shadow: 0  0  6px blue;
+}
+
+/* heading border */
+ #E_brochuresPage #heading{
+   box-shadow: 0  0  6px red;
+ }
+
+ /* center section */
+#E_brochuresPage .E_brochure_center{
+    width:26%;
+    float: left;
+    margin-left:11%;
+}
+
+/* right section */
+#E_brochuresPage .E_brochure_right{
+     width:26%;
+     float: right;
+ }
+
+ /* Target all links in the E_brochuresPage */
+#E_brochuresPage a{
+    color: black;
+}
+#E_brochuresPage a:hover{
+    color: blue;
+}
+/* ____________________________ServicesPage___________________________ */
+
+/* The layout of the page */
+#ServicesPage{
+    height:870px;
+    width: 500px;
+}
+
+/* h3 basically is the link to content 'topics' */
+#ServicesPage h3:hover{
+    cursor: pointer;
+    border-radius:10px;
+    box-shadow: 0 0 6px blue;
+}
+
+/* The size of accordion area*/
+#ServicesPage #accordion{
+  /* border: 2px solid gold; */
+  width: 1000px;
+}
+#ServicesPage h3{
+  background-color: darkblue;
+  background-repeat: no-repeat;
+  line-height:30px;
+  text-align: center;
+  /* float: left; */
+  border: 2px solid black;
+  font-size: 15px;
+  border-radius:10px;
+  border-bottom: 2px solid black;
+  border-left: 1px solid black;
+  color: white;
+  width: 400PX;
+  margin-left: 30%;
+}
+#ServicesPage #accordion_content{
+  height: 500px;
+  border: 1px solid red;
+  box-shadow: 0 0 6px black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  padding: 20px;
+  background-image: url("Service_content.png");
+  background-repeat: no-repeat;
+  color: black;
+  font-size: 14px;
+  border-radius: 12px;
+  font-family: myfirstfont;
+  line-height: 200%;
+  text-align: left;
+}
+
+#PatientAndVisitorsPage .LinkSide{
+  width: 220px;
+  float: left;
+  /* border: 1px solid red; */
+  padding:0px;
+  margin:0px;
+}
+
+/* forming the navigation_bar in the link side */
+#ServicesPage .LinkSide ul li{
+  list-style: none; /*no bullet */
+  background-color: purple;
+  /* background-image: url("hover_background .png"); */
+  background-repeat: no-repeat;
+  line-height:30px;
+  text-align: center;
+  font-size: 15px;
+  border: 1px solid white;
+  border-radius:10px;
+  border-bottom: 2px solid black;
+  border-left: 1px solid black;
+  margin-top: 10px;
+}
+
+/* The color for links in the linkside of the page */
+#ServicesPage .LinkSide ul li a{
+  color: black;
+}
+
+/* changing the color when hover */
+#ServicesPage .LinkSide ul li a:hover{
+  color: blue;
+}
+#ServicesPage .LinkSide ul li:hover{
+  cursor: pointer;
+  border-radius:10px;
+  box-shadow: 0 0 6px blue;
+}
+
+
+
+
+
+
+
+#ServicesPage .LinkSide ul li{
+
+}
+#ServicesPage table td, td{
+  border: 2px solid black
+}
+
+/* layouting the 'img's in the LaboratoryServices section  */
+#ServicesPage  img {
+    float: left;
+    border: 2px solid white;
+    width: 300px;
+    height: 250px;
+    margin: 10px;
+}
+
+/* layouting the paragraph in the LaboratoryServices section  */
+#ServicesPage #laboratoryParagraph{
+    padding: 5px 20px;
+    margin:5px 50px;
+}
+/* ____________________________ScreeningPackagesPage___________________________ */
+
+/* The layout of the page */
+/* This page is divided into three sections left, center, right */
+#ScreeningPackages .ScreeningPackages_body{
+  /* border: 1px solid red; */
+  padding-top: 20px;
+  width: 100%;
+  height: 800px;
+  /* background-color: black; */
+  padding-bottom: 0px;
+  background-image: url("Background2.png");
+}
+
+/* The left section */
+#ScreeningPackages .ScreeningPackages_left{
+  float: left;
+  width: 28%;
+  height: 200px;
+}
+
+/* The center section */
+#ScreeningPackages .ScreeningPackages_center{
+  float: left;
+  margin-left: 8%;
+  width: 28%;
+  height: 200px;
+}
+
+/* The right section */
+#ScreeningPackages .ScreeningPackages_right{
+  float: right;
+  width: 28%;
+  height: 200px;
+
+}
+/* as long as all packages have the same desgin so, these are all packages */
+#ScreeningPackages .Packages{
+  font-size: 12px;
+  margin-bottom: 15%;
+  border: 1px solid black;
+  background-color: #eff3f9;
+  box-shadow: 0 0 6px black;
+  border-radius: 10px;
+}
+/* target the links in ScreeningPackages page  */
+#ScreeningPackages  a{
+  margin-left: 28%;
+  background-color: #d80000;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  font-size: 18px;
+  padding: 15px;
+  text-align: center;
+  box-shadow:  0 0 6px #000;
+}
+#ScreeningPackages  a:hover{
+  background-color: white;
+  color: red;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+/* Styling the headings in the page */
+#ScreeningPackages  #headings{
+  background-color: #0124bc;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 30px;
+  padding: 10px;
+  text-align: center;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  box-shadow: 0 0 6px black;
+}
